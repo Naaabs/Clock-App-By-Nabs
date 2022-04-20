@@ -29,8 +29,7 @@ var AfficheHeure = function(){
     JourNom = Listejours[Aujourdhui.getDay()];
 
     //Afficher les heures, minutes et secondes avec 2 chiffres
-
-    DeuxChiffres = function(element){
+    DeuxChiffres = function(element){   // ex : si element = 6 alors on affiche HH:06:SS
         if (element < 10){
             return element = "0" + element;
         }else{
